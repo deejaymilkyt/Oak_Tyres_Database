@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Oak_Tyres_Database.sqlproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
