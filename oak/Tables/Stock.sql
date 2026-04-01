@@ -56,7 +56,14 @@
 );
 
 
+
+
 GO
 CREATE UNIQUE NONCLUSTERED INDEX [UQ_Stock_StCode]
     ON [oak].[Stock]([StCode] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_Stock_ManufacturerID_OEList]
+    ON [oak].[Stock]([ManufacturerID] ASC, [OEList] ASC);
 

@@ -59,3 +59,9 @@
     CONSTRAINT [FK_StockDyn_Stock] FOREIGN KEY ([StockID]) REFERENCES [oak].[Stock] ([StockID])
 );
 
+
+GO
+CREATE NONCLUSTERED INDEX [IX_StockDyn_StockID_StockBal]
+    ON [oak].[StockDyn]([StockID] ASC)
+    INCLUDE([StockBal]);
+
